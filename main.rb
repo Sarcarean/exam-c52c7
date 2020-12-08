@@ -16,10 +16,16 @@ bikes = [
 ]
 
 total_price = 0
-total_price += bikes[0].cost
-total_price += bikes[1].cost
-total_price += bikes[2].cost
-total_price += bikes[3].cost
+
+total_price = 0
+bikes.each do |n|
+  total_price +=  n.cost
+end
+
+#total_price += bikes[0].cost
+#total_price += bikes[1].cost
+#total_price += bikes[2].cost
+#total_price += bikes[3].cost
 
 
 # total_price += bikes[0].weekly_rate

@@ -16,7 +16,11 @@ class RoadBike < GenericBike
   end
   
   def cost
-    panniers[0].price + panniers[1].price + (@daily_rate * 7)
+    pannier_cost = 0
+    @panniers.each do |n|
+	  pannier_cost = pannier_cost + n.price
+	end
+	pannier_cost + (@daily_rate * 7)
   end 
 
   def panniers

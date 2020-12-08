@@ -18,7 +18,7 @@ class BmxBike < GenericBike
   end
 
   def cost
-    @weekly_price + @tail_pack
+    @weekly_price + @tail_pack.cost
   end
 
 end
