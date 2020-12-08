@@ -1,7 +1,7 @@
 class BmxBike < GenericBike
 
-  def initialize(tail_pack)
-    @tail_pack = tail_pack
+  def initialize(bag)
+    @bag = bag
     @weekly_price = 70
     @daily_price = 20
     @hourly_price = 5
@@ -16,7 +16,11 @@ class BmxBike < GenericBike
   end
 
   def cost
-    @weekly_price + @tail_pack.price
+    @weekly_price + @bag.price
+  end
+  
+  def pack
+    @bag
   end
 
 end

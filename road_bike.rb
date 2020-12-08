@@ -1,7 +1,7 @@
 class RoadBike < GenericBike
 
-  def initialize(panniers)
-    @panniers = panniers
+  def initialize(bag)
+    @bag = bag
     @daily_rate = 15
   end
 
@@ -14,19 +14,19 @@ class RoadBike < GenericBike
   end
   
   def cost
-    pannier_cost = 0
-    @panniers.each do |n|
-	  pannier_cost = pannier_cost + n.price
+    bag_cost = 0
+    @bag.each do |n|
+	  bag_cost = bag_cost + n.price
 	end
-	pannier_cost + (@daily_rate * 7)
+	bag_cost + (@daily_rate * 7)
   end 
-
-  def panniers
-    @panniers
-  end
 
   def daily_rate
     @daily_rate
+  end
+
+  def pack
+    @bag
   end
 
 end

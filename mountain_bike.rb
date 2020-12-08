@@ -1,7 +1,7 @@
 class MountainBike < GenericBike
 
-  def initialize(luggage)
-    @luggage = luggage
+  def initialize(bag)
+    @bag = bag
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10
@@ -16,12 +16,8 @@ class MountainBike < GenericBike
   end
 
   def cost
-    @weekly_rate + @luggage.price
+    @weekly_rate + @bag.price
   end 
-
-  def luggage
-    @luggage
-  end
 
   def weekly_rate
     @weekly_rate
@@ -35,4 +31,8 @@ class MountainBike < GenericBike
     @hourly_rate
   end
 
+  def pack
+    @bag
+  end
+  
 end

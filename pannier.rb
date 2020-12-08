@@ -9,16 +9,3 @@ class Pannier < GenericPack
   end
   
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
