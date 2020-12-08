@@ -21,10 +21,6 @@ class RoadBike < GenericBike
 	bag_cost + (@daily_rate * 7)
   end 
 
-  def daily_rate
-    @daily_rate
-  end
-
   def pack
     @bag
   end
