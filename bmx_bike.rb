@@ -11,26 +11,14 @@ class BmxBike < GenericBike
 
   def prepare
     adjust_seat()
-  end  
+  end
 
   def adjust_seat
     puts "Adjusting seat..."
   end
 
-  def tail_pack
-    @tail_pack
-  end
-
-  def weekly_rate
-    @weekly_price
-  end
-
-  def daily_rate
-    @daily_price
-  end
-
-  def hourly_rate
-    @hourly_price
+  def cost
+    @weekly_price + @tail_pack
   end
 
 end

@@ -17,6 +17,10 @@ class MountainBike < GenericBike
     puts "Adjusting suspension..."
   end
 
+  def cost
+    @weekly_rate + @luggage.price
+  end 
+
   def luggage
     @luggage
   end
