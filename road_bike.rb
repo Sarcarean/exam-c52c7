@@ -18,7 +18,7 @@ class RoadBike < GenericBike
     @bag.each do |n|
 	  bag_cost = bag_cost + n.price
 	end
-	bag_cost + (@daily_rate * 7)
+    bag_cost + (@daily_rate * 7)
   end 
 
   def pack
