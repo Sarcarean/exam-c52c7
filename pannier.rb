@@ -12,7 +12,7 @@ class Pannier
     @price
   end
 
-  end
+end
 
 
 
