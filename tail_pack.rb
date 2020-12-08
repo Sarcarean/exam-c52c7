@@ -1,11 +1,11 @@
-class TailPack
+class TailPack < GenericPack
 
   def initialize
-    @cost = 2 # Flat rate per rental
+    @price = 2 # Flat rate per rental
   end
 
-  def cost
-    @cost
+  def price
+    @price
   end
 
 end

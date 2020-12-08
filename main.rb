@@ -3,6 +3,8 @@
 # So that I know how much money I will need to pay
 
 require_relative 'generic_bike'
+require_relative 'generic_pack'
+
 require_relative 'bmx_bike'
 require_relative 'road_bike'
 require_relative 'mountain_bike'
@@ -20,7 +22,7 @@ bikes = [
 total_price = 0
 bikes.each do |n|
   n.prepare
-  total_price +=  n.cost
+  total_price += n.cost
 end
 
 puts "Total price: #{total_price}"
