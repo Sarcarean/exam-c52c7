@@ -3,6 +3,19 @@
 #   for a week
 # So that I know how much money I will need to pay
 
+class GenericBike
+
+  def prepare
+    raise 'Prepare method not implemented!'
+  end
+  
+  def clean
+    puts "Cleaning..."
+  end 
+  
+end
+
+
 require_relative 'bmx_bike'
 require_relative 'road_bike'
 require_relative 'mountain_bike'

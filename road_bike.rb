@@ -1,15 +1,15 @@
 require_relative 'pannier'
 
-class RoadBike
+class RoadBike < GenericBike
 
   def initialize
     @panniers = [Pannier.new, Pannier.new]
     @daily_rate = 15
   end
 
-  def clean
-    puts "Cleaning..."
-  end
+  def prepare
+    lubricate_gears()
+  end  
 
   def lubricate_gears
     puts "Lubricating gears..."

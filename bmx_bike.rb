@@ -1,6 +1,6 @@
 require_relative 'tail_pack'
 
-class BmxBike
+class BmxBike < GenericBike
 
   def initialize
     @tail_pack = TailPack.new
@@ -9,9 +9,9 @@ class BmxBike
     @hourly_price = 5
   end
 
-  def clean
-    puts "Cleaning..."
-  end
+  def prepare
+    adjust_seat()
+  end  
 
   def adjust_seat
     puts "Adjusting seat..."
