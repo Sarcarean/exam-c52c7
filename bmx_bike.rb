@@ -1,9 +1,7 @@
-require_relative 'tail_pack'
-
 class BmxBike < GenericBike
 
-  def initialize
-    @tail_pack = TailPack.new
+  def initialize(tail_pack)
+    @tail_pack = tail_pack
     @weekly_price = 70
     @daily_price = 20
     @hourly_price = 5

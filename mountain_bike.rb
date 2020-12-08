@@ -1,9 +1,7 @@
-require_relative 'roll_pack'
-
 class MountainBike < GenericBike
 
-  def initialize
-    @luggage = RollPack.new
+  def initialize(luggage)
+    @luggage = luggage
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10

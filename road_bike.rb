@@ -1,9 +1,7 @@
-require_relative 'pannier'
-
 class RoadBike < GenericBike
 
-  def initialize
-    @panniers = [Pannier.new, Pannier.new]
+  def initialize(panniers)
+    @panniers = panniers
     @daily_rate = 15
   end
 
