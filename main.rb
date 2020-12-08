@@ -19,6 +19,7 @@ bikes = [
 
 total_price = 0
 bikes.each do |n|
+  n.prepare
   total_price +=  n.cost
 end
 
